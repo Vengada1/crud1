@@ -1,38 +1,103 @@
 .App {
   text-align: center;
+  opacity: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+padding : 12px;
+font-size : 25px;
+font-weight: bolder;
+font-style:normal;
+background-color: rgb(102, 160, 218);
+font-family:'Times New Roman', Times, serif
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-styles{
+  padding : 12px;
+  width : 100%;
+  background-color: rgb(85, 149, 245);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
+  gap :0.5rem;
+}
+.nav-buttons{
+  border: 1px solid rgb(31, 30, 30);
   color: white;
+  padding : 12px;
+  border-radius : 5px;
+  background-color: inherit;
+}
+.nav-buttons:hover{
+  background-color: black;
+  border: none;
+}
+.view-btn:hover{
+ background-color: rgb(200, 236, 126);
+ color : white;
 }
 
-.App-link {
-  color: #61dafb;
+footer{
+
+  padding: 17px;
+  font-size: medium;
+  font-weight: bolder;
+  width : 100%;
+  background-color: rgb(191, 144, 223);
+  font-family:'Times New Roman', Times, serif
+}
+.user-content{
+margin : 10px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+gap: 2rem;
+font-family:'Times New Roman', Times, serif
+
+}
+.user-card{
+  background-color: #c3e065cb;
+  border-radius : 5px;
+  width : 250px;
+  height : 250px;
+}
+.btn{
+  padding: 10px;
+  margin : 5px;
+  border : none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size : 11px;
+}
+.edit-btn:hover{
+  background-color: rgb(248, 171, 244);
+  font-family:'Times New Roman', Times, serif
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.del-btn:hover{
+  background-color: rgb(230, 175, 120);
+  color : white;
+  font-family:'Times New Roman', Times, serif
+ }
+ .childred{
+  height : 90vh;
+  margin : 1vh;
+  display : flex;
+  flex-direction: column;
+  justify-content: space-between;
+ }
+ .dashboard{
+  display: flex;
+  flex-direction: coloumn;
+
+ }
+ .side-bar{
+  border: 1px solid rgb(148, 247, 148);
+  height:  100vh;
+  width : 15%;
+  background-color:  blue;
+ }
+
+ .main-content{
+  background-color: red;
+  height: 100vh;
+  width : 85%;
+ }
